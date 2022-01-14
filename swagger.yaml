@@ -35,7 +35,6 @@ paths:
   /courses/{course_id}/passings:
     get:
       - "passings"
-      summary: "foo"
       description: ""
       produces:
       - "application/json"
