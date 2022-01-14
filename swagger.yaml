@@ -32,6 +32,25 @@ schemes:
 - "https"
 - "http"
 paths:
+  /courses/{course_id}/passings:
+    get:
+      - "passings"
+      summary: "прохождения курса"
+      description: ""
+      produces:
+      - "application/json"
+      parameters:
+      - name: "course_id"
+        in: "path"
+        description: "ID of course"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/ApiResponse"
   /pet/{petId}/uploadImage:
     post:
       tags:
