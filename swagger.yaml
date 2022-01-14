@@ -12,9 +12,11 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "petstore.swagger.io"
-basePath: "/v2"
+host: "eugenegy.github.io"
+basePath: "/jetclass-api"
 tags:
+- name: "courses"
+  description: "Всё о курсах"
 - name: "pet"
   description: "Everything about your Pets"
   externalDocs:
