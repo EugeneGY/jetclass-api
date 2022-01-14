@@ -1,4 +1,4 @@
-swagger: "3.0"
+swagger: "2.0"
 info:
   description: "Тестовый сервер документации по API платформы Jetclass/"
   version: "0.0.1"
