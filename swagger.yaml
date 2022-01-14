@@ -34,7 +34,9 @@ schemes:
 paths:
   /courses/{course_id}/passings:
     get:
+      tags:
       - "passings"
+      summary: "foo"
       description: ""
       produces:
       - "application/json"
