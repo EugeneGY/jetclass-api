@@ -12,9 +12,11 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "eugenegy.github.io"
-basePath: "/jetclass-api"
+host: "new-front-review-js-661.review.jetclass.ru"
+basePath: "/api/v3"
 tags:
+- name: "teachers"
+  description: "Всё о преподах"
 - name: "courses"
   description: "Всё о курсах"
 - name: "pet"
@@ -33,6 +35,16 @@ schemes:
 - "https"
 - "http"
 paths:
+  /teacher/courses:
+    get:
+      tags:
+      - "teachers"
+      summary: "bar"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/ApiResponse"
   /courses/{course_id}/passings:
     get:
       tags:
