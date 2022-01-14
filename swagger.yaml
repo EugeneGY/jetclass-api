@@ -35,7 +35,7 @@ paths:
   /courses/{course_id}/passings:
     get:
       tags:
-      - "passings"
+      - "courses"
       summary: "foo"
       description: ""
       produces:
